@@ -18,7 +18,6 @@ test('cmp', function (t) {
     t.plan(1);
     t.deepEqual(versions.sort(cmp),
                 versions.sort(semver.compare));
-
 });
 
 test('cmp pre-release', function(t) {
